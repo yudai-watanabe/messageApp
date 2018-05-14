@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class SecondViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
 		// Do any additional setup after loading the view, typically from a nib.
 	}
 
