@@ -16,6 +16,8 @@
 		3745B3DE20A3DDDF00BAB97C /* messageAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3745B3DD20A3DDDF00BAB97C /* messageAppTests.swift */; };
 		3745B3E920A3DDDF00BAB97C /* messageAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3745B3E820A3DDDF00BAB97C /* messageAppUITests.swift */; };
 		3745B3F720A3DF4D00BAB97C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3745B3F620A3DF4C00BAB97C /* GoogleService-Info.plist */; };
+		37DFD0F820AAC24D00F5F96D /* ChannelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DFD0F620AAC24D00F5F96D /* ChannelCollectionViewCell.swift */; };
+		37DFD0F920AAC24D00F5F96D /* ChannelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37DFD0F720AAC24D00F5F96D /* ChannelCollectionViewCell.xib */; };
 		37E21B3320A593D100A97986 /* SelfMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E21B3120A593D100A97986 /* SelfMessageTableViewCell.swift */; };
 		37E21B3420A593D100A97986 /* SelfMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E21B3220A593D100A97986 /* SelfMessageTableViewCell.xib */; };
 		7D349A1B402D5E2833E27EAE /* Pods_messageAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58481D8D0F93B305C502213 /* Pods_messageAppUITests.framework */; };
@@ -58,6 +60,8 @@
 		3745B3E820A3DDDF00BAB97C /* messageAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageAppUITests.swift; sourceTree = "<group>"; };
 		3745B3EA20A3DDDF00BAB97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3745B3F620A3DF4C00BAB97C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		37DFD0F620AAC24D00F5F96D /* ChannelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCollectionViewCell.swift; sourceTree = "<group>"; };
+		37DFD0F720AAC24D00F5F96D /* ChannelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCollectionViewCell.xib; sourceTree = "<group>"; };
 		37E21B3120A593D100A97986 /* SelfMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfMessageTableViewCell.swift; sourceTree = "<group>"; };
 		37E21B3220A593D100A97986 /* SelfMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfMessageTableViewCell.xib; sourceTree = "<group>"; };
 		46158C86B913D2EF9F3334A6 /* Pods-messageApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messageApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-messageApp/Pods-messageApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 			children = (
 				37E21B3120A593D100A97986 /* SelfMessageTableViewCell.swift */,
 				37E21B3220A593D100A97986 /* SelfMessageTableViewCell.xib */,
+				37DFD0F620AAC24D00F5F96D /* ChannelCollectionViewCell.swift */,
+				37DFD0F720AAC24D00F5F96D /* ChannelCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 			files = (
 				3745B3D320A3DDDF00BAB97C /* LaunchScreen.storyboard in Resources */,
 				37E21B3420A593D100A97986 /* SelfMessageTableViewCell.xib in Resources */,
+				37DFD0F920AAC24D00F5F96D /* ChannelCollectionViewCell.xib in Resources */,
 				3745B3F720A3DF4D00BAB97C /* GoogleService-Info.plist in Resources */,
 				3745B3D020A3DDDF00BAB97C /* Assets.xcassets in Resources */,
 				3745B3CE20A3DDDD00BAB97C /* Main.storyboard in Resources */,
@@ -345,6 +352,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-messageApp/Pods-messageApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -359,6 +367,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -421,6 +430,7 @@
 				3745B3C720A3DDDD00BAB97C /* AppDelegate.swift in Sources */,
 				3745B3C920A3DDDD00BAB97C /* FirstViewController.swift in Sources */,
 				37E21B3320A593D100A97986 /* SelfMessageTableViewCell.swift in Sources */,
+				37DFD0F820AAC24D00F5F96D /* ChannelCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

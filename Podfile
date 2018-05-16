@@ -11,6 +11,7 @@ target 'messageApp' do
   pod 'Firebase/Firestore'
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
+  pod 'IGListKit',  '~> 3.0'
 
   target 'messageAppTests' do
     inherit! :search_paths
